@@ -18,7 +18,6 @@
     }
   },
   "main": "./dist/index.cjs",
-  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -26,13 +25,15 @@
     "build": "unbuild",
     "prepack": "unbuild"
   },
-  "devDependencies": {
-    "@antfu/eslint-config": "^3.14.0",
+  "peerDependencies": {
     "@unocss/config": "^65.4.2",
     "@unocss/rule-utils": "^65.4.2",
     "defu": "^6.1.4",
+    "stylelint": "^16.0.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.14.0",
     "eslint": "^9.18.0",
-    "stylelint": "^16.0.0",
     "typescript": "^5.7.3",
     "unbuild": "^3.3.1"
   }
