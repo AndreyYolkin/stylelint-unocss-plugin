@@ -14,7 +14,7 @@ const ruleName = 'stylelint-unocss-plugin/no-missconfigured-theme-fn'
 const themeFnRE = /theme\(\s*(['"])?(.*?)\1?\s*\)/g
 
 const messages = ruleMessages(ruleName, {
-  notFound: text => `token "${text}" is not present in theme`,
+  notFound: text => `token "${text}" is missing from the theme`,
   emptyArg: () => 'theme() expect a non-empty string argument',
 })
 
