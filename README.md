@@ -47,12 +47,12 @@ export default {
 }
 ```
 
-Currently, only `cwd` and `path` are supported.
+Currently, only `cwd` and `path` options are supported.
 
 See: [UnoCSS Config](https://github.com/unocss/unocss/blob/919bdc43b5b650b73edec614220c9c3ff3758460/packages-engine/config/src/index.ts#L10-L15)
 
 ### VS Code limitations
 
-[vscode-stylelint](https://github.com/stylelint/vscode-stylelint) doesn't watch for changes in the uno file, so you'll need to restart VS Code after changing the config.
+[vscode-stylelint](https://github.com/stylelint/vscode-stylelint) doesn't watch for changes in the uno file, so you'll need to restart Stylelint after changing the config.
 
 To do this, you can press `Ctrl+Shift+P` and select `Stylelint: Restart Stylelint Server`.
