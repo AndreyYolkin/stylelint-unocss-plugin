@@ -1,0 +1,39 @@
+{
+  "name": "stylelint-unocss-plugin",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Set (in the future) of rules to extend unocss support in stylelint",
+  "author": "Andrei Elkin <andreyyolkin@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/andreyyolkin/stylelint-unocss-plugin#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreyyolkin/stylelint-unocss-plugin.git"
+  },
+  "keywords": [],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "prepack": "unbuild"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.14.0",
+    "@unocss/config": "^65.4.2",
+    "@unocss/rule-utils": "^65.4.2",
+    "defu": "^6.1.4",
+    "eslint": "^9.18.0",
+    "stylelint": "^16.0.0",
+    "typescript": "^5.7.3",
+    "unbuild": "^3.3.1"
+  }
+}
